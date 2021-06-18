@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:padding="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/pTitle"
+                android:text="@string/participant_edit"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/participationTitle"
+                android:layout_below="@+id/pTitle"
+                android:inputType="text"
+                android:hint="@string/participant_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/participantRoll"
+                android:inputType="text"
+                android:layout_below="@+id/participationTitle"
+                android:hint="@string/roll_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/participantDepartment"
+                android:layout_below="@+id/participantRoll"
+                android:inputType="text"
+                android:hint="@string/department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/participantContact"
+                android:layout_below="@+id/participantDepartment"
+                android:inputType="phone"
+                android:hint="Contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/participantRole"
+                android:layout_below="@+id/participantContact"
+                android:inputType="text"
+                android:hint="@string/participant_role"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+            <Button
+                android:id="@+id/pSaveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/participantRole"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@color/green"
+                android:text="@string/save"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/pCancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/participantRole"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="88dp"
+                android:backgroundTint="@color/green"
+                android:text="@string/cancel"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:padding="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/rTitle"
+                    android:text="@string/enter_registration"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/registrationTitle"
+                    android:layout_below="@+id/rTitle"
+                    android:inputType="text"
+                    android:hint="@string/registration_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/rRoll"
+                    android:inputType="text"
+                    android:layout_below="@+id/registrationTitle"
+                    android:hint="@string/roll_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/rDepartment"
+                    android:layout_below="@+id/rRoll"
+                    android:inputType="text"
+                    android:hint="@string/department"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/rContact"
+                    android:layout_below="@+id/rDepartment"
+                    android:inputType="phone"
+                    android:hint="Contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <EditText
+                    android:id="@+id/rStatus"
+                    android:layout_below="@+id/rContact"
+                    android:inputType="text"
+                    android:hint="@string/registeration_fee_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+
+                <Button
+                    android:id="@+id/rSaveButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rStatus"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="68dp"
+                    android:layout_marginTop="24dp"
+                    android:backgroundTint="@color/green"
+                    android:text="@string/save"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/rCancelButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rStatus"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="88dp"
+                    android:backgroundTint="@color/green"
+                    android:text="@string/cancel"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

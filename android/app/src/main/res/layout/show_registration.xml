@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:padding="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/showRTitle"
+                    android:text="Registration Details"
+                    android:textSize="20sp"
+
+                    android:textStyle="italic"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/showRegistrationTitle"
+                    android:layout_below="@+id/showRTitle"
+                    android:inputType="text"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:hint="@string/registration_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/showRegistrationRollNumber"
+                    android:inputType="text"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:layout_below="@+id/showRegistrationTitle"
+                    android:hint="@string/roll_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/showRegistrationDepartment"
+                    android:layout_below="@+id/showRegistrationRollNumber"
+                    android:inputType="text"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:hint="@string/department"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/showRegisrationContact"
+                    android:layout_below="@+id/showRegistrationDepartment"
+                    android:inputType="text"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:hint="@string/contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/showRegistrationStatus"
+                    android:layout_below="@+id/showRegisrationContact"
+                    android:inputType="text"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:hint="@string/registration_fee_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+
+                <Button
+                    android:id="@+id/rBackButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/showRegistrationStatus"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="24dp"
+                    android:backgroundTint="@color/green"
+                    android:text="@string/back"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

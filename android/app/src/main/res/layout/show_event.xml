@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="24dp">
+
+                <TextView
+                    android:id="@+id/showETitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/enter_event"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/showEventTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/showETitle"
+                    android:hint="@string/event_title"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/showEventType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/showEventTitle"
+                    android:hint="@string/event_type"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/showEventVenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/showEventType"
+                    android:hint="@string/venue"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/showEventDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/showEventVenue"
+                    android:hint="@string/event_date"
+                    android:inputType="date"
+                    android:padding="8dp"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/showEventStime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/showEventDate"
+                    android:hint="@string/starting_time"
+                    android:inputType="time"
+                    android:padding="8dp"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/showEventEtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/showEventStime"
+                    android:hint="@string/ending_time"
+                    android:inputType="time"
+                    android:padding="8dp"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/showEventDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/showEventEtime"
+                    android:hint="@string/description"
+                    android:inputType="textLongMessage"
+                    android:padding="8dp"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/showEventDescription"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="24dp"
+                    android:backgroundTint="@color/green"
+                    android:text="@string/back"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+</LinearLayout>
